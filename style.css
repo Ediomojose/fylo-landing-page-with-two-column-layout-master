@@ -1,0 +1,484 @@
+/* Create CSS Variables */
+:root{
+    --webpage-background-color: hsl(240, 75%, 98%);
+    --webpagemaintext-color:hsl(243, 87%, 12%);
+    --webpagetextalternate-color:hsl(240, 75%, 98%);
+    --webpageplaceholdertext-color:hsl(0, 0%, 75%);
+    --webpageasidelaptopbackground-background:url(/images/bg-curve-desktop.svg);
+    --webpageasidemobilebackground-background:url(/images/bg-curve-mobile.svg);
+    --webpagesection-background-color: hsl(238, 22%, 44%);
+    --webpagefooter-background-color:hsl(243, 87%, 12%);
+    --webpagebuttoncolor-background-color:hsl(224, 93%, 58%);
+    --webpagemargin-margin:3rem;
+    --webpagemarginmobile-margin:2rem;
+    --webpagenavbarfontsize-font-size:1.1rem;
+    --webpagefontheaders-font-family: 'Raleway', sans-serif;
+    --webpagefontbody-font-family: 'Open Sans', sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    font-family: var(--webpagefontbody-font-family);
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin: var(--webpagemargin-margin);
+    font-family: var(--webpagefontheaders-font-family);
+}
+
+nav img{
+    display: none;
+}
+
+nav ul{
+    display: flex;
+    gap: 2.5rem;
+}
+
+nav ul li{
+    list-style: none;
+    font-size: var(--webpagenavbarfontsize-font-size);
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: var(--webpagemaintext-color);
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: var(--webpagemargin-margin);
+}
+
+.first-text-box-element{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.first-text-box-element h1{
+    font-size: 2.6rem;
+    line-height: 3.5rem;
+    color: var(--webpagemaintext-color);
+    font-family: var(--webpagefontheaders-font-family);
+}
+
+.first-text-box-element p{
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+    padding: 1.2rem 0 1.2rem 0;
+    color: var(--webpagemaintext-color);
+}
+
+.first-text-box-element form{
+    display: flex;
+    gap: 1rem;
+}
+
+.first-text-box-element form input{
+    padding: 0.8rem;
+    width: 50%;
+    font-size: 1rem;
+    border-radius: 5px;
+    font-family: var(--webpagefontheaders-font-family);
+}
+
+.first-text-box-element form button{
+    width: 30%;
+    font-size: 1rem;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background-color: var(--webpagebuttoncolor-background-color);
+    border-radius: 5px;
+    box-shadow: 3px 3px 10px 6px rgb(57 75 84 / 8%);
+    color: var(--webpagetextalternate-color);
+    font-family: var(--webpagefontheaders-font-family);
+}
+
+.illustration-img img{
+    width: 100%;
+}
+
+aside{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10rem 0 2rem 0;
+    background: var(--webpageasidelaptopbackground-background)no-repeat;
+    background-size: cover;
+}
+
+.second-text-box-element{
+    margin: var(--webpagemargin-margin);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.second-text-box-element h2{
+    font-size: 2.2rem;
+    line-height: 3.5rem;
+    color: var(--webpagemaintext-color);
+    font-family: var(--webpagefontheaders-font-family);
+}
+
+.second-text-box-element p{
+    font-size: 1.1rem;
+    line-height: 1.3rem;
+    padding: 0.6rem 0 0.6rem 0;
+    color: var(--webpagemaintext-color);
+}
+
+.second-text-box-element a{
+    text-decoration: none;
+    color: hsl(170, 45%, 43%);
+}
+
+.quote-box{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    padding: 1rem 1rem 1rem 1rem;
+    width: 70%;
+    color: var(--webpagemaintext-color);
+    box-shadow: 3px 3px 10px 6px rgb(57 75 84 / 8%);
+}
+
+.img-name-holder{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 1rem;
+    color: var(--webpagemaintext-color);
+}
+
+.img-name-holder img{
+    border-radius: 50%;
+    width: 10%;
+    height: 90%;
+}
+
+.name-holder{
+    display: flex;
+    flex-direction: column;
+}
+
+.name-holder p{
+    padding: 0;
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
+.name-holder :first-child{
+    font-weight: bold;
+    font-size: 1rem;
+    font-style: normal;
+}
+
+.illustration-img2 img{
+    width: 80%;
+    margin: var(--webpagemargin-margin);
+}
+
+section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10rem;
+    padding: 3rem 0 3rem 0;
+    align-content: center;
+    justify-content: center;
+    background-color: var(--webpagesection-background-color);
+}
+
+.third-text-box-element{
+    margin: var(--webpagemargin-margin);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.third-text-box-element h3{
+    font-size: 1.9rem;
+    line-height: 3.5rem;
+    color: var(--webpagetextalternate-color);
+    font-family: var(--webpagefontheaders-font-family);
+}
+
+.third-text-box-element p{
+    font-size: 1.1rem;
+    line-height: 1.3rem;
+    padding: 0.6rem 0 0.6rem 0;
+    color: var(--webpagetextalternate-color);
+}
+
+section form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+
+section form input{
+    padding: 0.8rem;
+    width: 70%;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 3px 3px 10px 6px rgb(57 75 84 / 8%); 
+}
+
+section form button{
+    width: 32%;
+    height: 20%;
+    font-size: 1rem;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background-color: var(--webpagebuttoncolor-background-color);
+    color: var(--webpagetextalternate-color);
+    border-radius: 5px;
+    box-shadow: 3px 3px 10px 6px rgb(57 75 84 / 8%);
+    font-family: var(--webpagefontheaders-font-family);
+}
+
+footer{
+    background-color: var(--webpagefooter-background-color);
+    padding: 4rem 0 0rem 0;
+}
+
+footer ul{
+    list-style: none;
+}
+
+footer ul li{
+    padding: 1rem;
+}
+
+footer ul li a{
+    color: var(--webpagetextalternate-color);
+    text-decoration: none;
+}
+
+.footer-logo{
+    display: flex;
+    margin: var(--webpagemargin-margin);
+}
+
+.footer-links{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: var(--webpagemargin-margin);
+}
+
+/* for tablets */
+@media screen and (min-width: 481px)
+and (max-width: 912px){
+
+    nav{
+        margin: var(--webpagemargin-margin);
+    }
+
+    nav img{
+        display: none;
+    }
+
+    nav ul{
+        gap: 1.5rem;
+    }
+
+    main{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column-reverse;
+        margin: var(--webpagemargin-margin);
+    }
+
+    .first-text-box-element h1{
+        text-align: left;
+        font-size: 2.3rem;
+        line-height: 2.5rem;
+    }
+
+    .first-text-box-element p{
+        text-align: left;
+        font-size: 1.4rem;
+    }
+
+    .first-text-box-element form input{
+        width: 70%;
+    }
+
+    aside{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column-reverse;
+    }
+
+    .second-text-box-element{
+        margin: var(--webpagemargin-margin);
+    }
+
+    section{
+        gap: 1rem;
+    }
+
+    .third-text-box-element{
+        margin: var(--webpagemargin-margin);
+    }
+
+    section form{
+        margin: var(--webpagemargin-margin);
+    }
+
+    section form input{
+        width: 100%;
+    }
+
+    section form button{
+        width: 100%;
+       height: 3rem;
+    }
+
+    .footer-logo{
+        margin: var(--webpagemargin-margin);
+    }
+    
+    .footer-links{
+        margin: var(--webpagemargin-margin);
+    }
+}
+
+
+/* for mobile */
+@media screen and (max-width: 480px)
+and (orientation: portrait){
+    nav{
+        margin: var(--webpagemarginmobile-margin);
+    }
+
+    nav svg{
+        display: none;
+    }
+
+    nav img{
+        display: block;
+        width: 6rem;
+    }
+
+    nav ul{
+        gap: 1rem;
+    }
+
+    main{
+        display: flex;
+        flex-direction: column-reverse;
+        margin: var(--webpagemarginmobile-margin);
+    }
+
+    .first-text-box-element h1{
+        text-align: center;
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+
+    .first-text-box-element p{
+        text-align: center;
+        font-size: 1.1rem;
+    }
+
+    .first-text-box-element form{
+        flex-direction: column;
+    }
+
+    .first-text-box-element form input{
+        width: 100%;
+    }
+
+    .first-text-box-element form button{
+        width: 100%;
+        padding: 1rem;
+    }
+
+    aside{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column-reverse;
+    }
+
+    .second-text-box-element{
+        margin: var(--webpagemarginmobile-margin);
+    }
+
+    .second-text-box-element h2{
+        font-size: 1.3rem;
+        text-align: center;
+    }
+
+    .second-text-box-element p{
+        text-align: center;
+    }
+
+    .second-text-box-element a{
+        text-align: center;
+    }
+
+    .quote-box{
+        width: 100%;
+        padding: 1.3rem;
+    }
+
+    .quote-box p{
+        text-align: left;
+    }
+
+    section{
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .third-text-box-element{
+        margin: var(--webpagemarginmobile-margin);
+    }
+    
+    .third-text-box-element h3{
+        text-align: center;
+    }
+
+    .third-text-box-element p{
+        text-align: center;
+    }
+
+    section form{
+        margin: 0 3rem 0 3rem;
+    }
+
+    section form input{
+        width: 100%;
+    }
+
+    section form button{
+        width: 100%;
+       height: 3rem;
+    }
+
+    .footer-links{
+        grid-template-columns: 1fr;
+    }
+    
+}
